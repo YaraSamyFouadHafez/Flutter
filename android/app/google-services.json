@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "497035206886",
+    "project_id": "christian-unity-mission",
+    "storage_bucket": "christian-unity-mission.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497035206886:android:84eb9c8dbca5bb0d649b27",
+        "android_client_info": {
+          "package_name": "com.christianunitymission.CU"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497035206886-8pf2rqui0il49bi50sll36n02qiu6a5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.christianunitymission.CU",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "497035206886-o4c1o5mhpn85o7ja42vmsdu1ctvh0556.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.christianunitymission.CU",
+            "certificate_hash": "42dd4e65d46a59a6c8c65918b8097736d12f4ee9"
+          }
+        },
+        {
+          "client_id": "497035206886-9q67a7j1a0qi8i298dgp6r9b8e9uj5cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL9lfUJpYJifJ8Fe-w3pfQUj3pyEdc43s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497035206886-9q67a7j1a0qi8i298dgp6r9b8e9uj5cc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "497035206886-f5hjdfq2jp44k3j8vj0pbvu1at6eekh2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.christianunitymission.CU"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

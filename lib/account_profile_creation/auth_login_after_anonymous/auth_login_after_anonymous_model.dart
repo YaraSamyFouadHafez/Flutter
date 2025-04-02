@@ -1,0 +1,70 @@
+import '/backend/api_requests/api_calls.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
+import 'auth_login_after_anonymous_widget.dart'
+    show AuthLoginAfterAnonymousWidget;
+import 'package:flutter/material.dart';
+
+class AuthLoginAfterAnonymousModel
+    extends FlutterFlowModel<AuthLoginAfterAnonymousWidget> {
+  ///  State fields for stateful widgets in this page.
+
+  final formKey = GlobalKey<FormState>();
+  // State field(s) for emailAddress widget.
+  FocusNode? emailAddressFocusNode;
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
+  String? _emailAddressTextControllerValidator(
+      BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'hhq3w94h' /* Field Is required */,
+      );
+    }
+
+    if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
+      return 'Has to be a valid email address.';
+    }
+    return null;
+  }
+
+  // State field(s) for password widget.
+  FocusNode? passwordFocusNode;
+  TextEditingController? passwordTextController;
+  late bool passwordVisibility;
+  String? Function(BuildContext, String?)? passwordTextControllerValidator;
+  String? _passwordTextControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'al8rieud' /* Field Is required */,
+      );
+    }
+
+    return null;
+  }
+
+  // Stores action output result for [Custom Action - checkInternetConnection] action in Button widget.
+  bool? internetConnection2;
+  // Stores action output result for [Backend Call - API (loginUpdateToken V One)] action in Button widget.
+  ApiCallResponse? apiLoginResponseAA;
+  // Stores action output result for [Custom Action - checkInternetConnection] action in Button widget.
+  bool? internetConnection3;
+  // Stores action output result for [Backend Call - API (GoogleLogin V One)] action in Button widget.
+  ApiCallResponse? apiGoogleLoginResponseAA;
+
+  @override
+  void initState(BuildContext context) {
+    emailAddressTextControllerValidator = _emailAddressTextControllerValidator;
+    passwordVisibility = false;
+    passwordTextControllerValidator = _passwordTextControllerValidator;
+  }
+
+  @override
+  void dispose() {
+    emailAddressFocusNode?.dispose();
+    emailAddressTextController?.dispose();
+
+    passwordFocusNode?.dispose();
+    passwordTextController?.dispose();
+  }
+}
